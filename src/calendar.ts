@@ -183,6 +183,7 @@ export class Calendar {
         table.appendChild(thead);
 
         let thead_tr: HTMLElement = document.createElement('tr');
+        thead_tr.classList.add('cal_nav');
         thead.appendChild(thead_tr);
 
         thead_tr.appendChild(this._build_header_th({
@@ -212,6 +213,7 @@ export class Calendar {
      */
     _build_day_header(container: HTMLElement){
         let tr: HTMLElement = document.createElement('tr');
+        tr.classList.add('cal_days');
         for (let i: number = 0; i < 7; i++) {
             let day: number = (this._week_starts + i) % 7
             let td: HTMLElement = document.createElement('td');
@@ -278,6 +280,7 @@ export class Calendar {
         }
 
         let tr: HTMLElement = document.createElement('tr');
+        tr.classList.add('cal_week');
         container.appendChild(tr);
         for (let di: number = 0; di < blank_days; di++){
             let td: HTMLElement = document.createElement('td');
@@ -289,6 +292,7 @@ export class Calendar {
         while (iter <= days_in_month){
             if ((iter + blank_days) % 7 === 1) {
                 tr = document.createElement('tr');
+                tr.classList.add('cal_week');
                 container.appendChild(tr);
             }
 
