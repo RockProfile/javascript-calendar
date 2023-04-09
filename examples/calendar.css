@@ -1,0 +1,48 @@
+.cal_table{
+    text-align: center;
+}
+
+.cal_nav{
+
+    background-color: #1e2933;
+    color: #e4e4e4;
+    font-weight: bold;
+}
+
+.cal_days{
+    background-color: #306897;
+    color: #e4e4e4;
+    font-weight: bold;
+}
+
+.cal_week:nth-child(odd) td:nth-child(odd){
+    background-color: #ffd054;
+}
+
+.cal_week:nth-child(even) td:nth-child(even){
+    background-color: #ffd054;
+}
+
+.cal_week:nth-child(odd) td:nth-child(even){
+    background-color: #3f7dae;
+    color: #e4e4e4;
+}
+
+.cal_week:nth-child(even) td:nth-child(odd){
+    background-color: #3f7dae;
+    color: #e4e4e4;
+}
+
+td.cal_selected{
+    font-weight: bold;
+    background-color: black !important;
+    color: #e4e4e4 !important;
+}
+
+.cal_active{
+    cursor: pointer;
+}
+
+.cal_inactive{
+    color: lightgray !important;
+}
