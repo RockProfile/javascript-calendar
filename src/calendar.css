@@ -1,9 +1,15 @@
 .cal_table{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
     text-align: center;
 }
 
-.cal_nav{
+.cal_table td{
+    width: calc(100% / 7);
+}
 
+.cal_nav{
     background-color: #1e2933;
     color: #e4e4e4;
     font-weight: bold;
